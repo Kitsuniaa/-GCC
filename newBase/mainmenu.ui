@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1103</width>
+    <height>784</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1103</width>
+    <height>784</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1103</width>
+    <height>784</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Главное окно</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>venv/1b0b14f2-7525-4b4b-90fc-639c0496cbd9.jpg</normaloff>venv/1b0b14f2-7525-4b4b-90fc-639c0496cbd9.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1101</width>
+      <height>751</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1101</width>
+      <height>751</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1101</width>
+      <height>751</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Основное меню</string>
+     </attribute>
+     <widget class="QTreeWidget" name="treeWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>256</width>
+        <height>711</height>
+       </rect>
+      </property>
+      <property name="allColumnsShowFocus">
+       <bool>false</bool>
+      </property>
+      <property name="columnCount">
+       <number>1</number>
+      </property>
+      <column>
+       <property name="text">
+        <string>Основное меню</string>
+       </property>
+      </column>
+      <item>
+       <property name="text">
+        <string>Заявки</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Черновики</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Отправленные</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>В работе</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Отклоненные</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Завершенные</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Все</string>
+        </property>
+       </item>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>10</y>
+        <width>151</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(133, 139, 255);color:rgb(247, 255, 251)
+</string>
+      </property>
+      <property name="text">
+       <string>Новая заявка</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1103</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuControl">
+    <property name="title">
+     <string>Управление</string>
+    </property>
+    <addaction name="actionLogs"/>
+    <addaction name="actionExit"/>
+    <addaction name="actionHelp"/>
+    <addaction name="actionAccounts"/>
+   </widget>
+   <addaction name="menuControl"/>
+  </widget>
+  <action name="actionLogs">
+   <property name="text">
+    <string>Логи</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="actionAccounts">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Аккаунты</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

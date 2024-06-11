@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ObservationEditForm</class>
+ <widget class="QMainWindow" name="ObservationEditForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1097</width>
+    <height>906</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1097</width>
+    <height>906</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1097</width>
+    <height>906</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Редактирование заявки</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>venv/ico.gif</normaloff>venv/ico.gif</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>12</y>
+      <width>471</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nirmala UI</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Редактирование заявки</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>238</y>
+      <width>307</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>60</y>
+      <width>536</width>
+      <height>179</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="title">
+     <string> Информация об идентификаторе</string>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>33</y>
+       <width>105</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID набл-еля</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>67</y>
+       <width>36</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Тип</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>101</y>
+       <width>63</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Подтип</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>135</y>
+       <width>53</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cvz</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>124</x>
+       <y>33</y>
+       <width>401</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>124</x>
+       <y>67</y>
+       <width>401</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>PARALLEL</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOMETYPE_1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOMETYPE_2</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="comboBox_2">
+     <property name="geometry">
+      <rect>
+       <x>124</x>
+       <y>101</y>
+       <width>401</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>PURE</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOMESUBTYPE_1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOMESUBTYPE_2</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>555</x>
+      <y>60</y>
+      <width>536</width>
+      <height>179</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="title">
+     <string>Основная информация</string>
+    </property>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>33</y>
+       <width>78</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Р. старт</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>67</y>
+       <width>73</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>П. старт</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>101</y>
+       <width>64</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Прод-ть</string>
+     </property>
+    </widget>
+    <widget class="QDateTimeEdit" name="dateTimeEdit">
+     <property name="geometry">
+      <rect>
+       <x>97</x>
+       <y>33</y>
+       <width>421</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>dd.MM.yyyy HH:mm</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QDateTimeEdit" name="dateTimeEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>97</x>
+       <y>67</y>
+       <width>421</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_7">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>100</y>
+       <width>401</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>261</y>
+      <width>1081</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="title">
+     <string>Информация о цели наблюдения</string>
+    </property>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>42</y>
+       <width>97</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Цель</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>76</y>
+       <width>124</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Right Ascression</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>110</y>
+       <width>93</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>V-Magnitude</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>545</x>
+       <y>42</y>
+       <width>90</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Тип цели</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>545</x>
+       <y>76</y>
+       <width>79</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Decination</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>545</x>
+       <y>110</y>
+       <width>94</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Other Fluxes</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>170</y>
+       <width>251</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Сохранить</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_3">
+     <property name="geometry">
+      <rect>
+       <x>646</x>
+       <y>42</y>
+       <width>411</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string>FIXED</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>FIXED</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOMETARGETTYPE_1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOMETARGETTYPE_2</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>143</x>
+       <y>42</y>
+       <width>171</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>143</x>
+       <y>76</y>
+       <width>171</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_4">
+     <property name="geometry">
+      <rect>
+       <x>143</x>
+       <y>110</y>
+       <width>171</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_5">
+     <property name="geometry">
+      <rect>
+       <x>646</x>
+       <y>76</y>
+       <width>411</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_6">
+     <property name="geometry">
+      <rect>
+       <x>646</x>
+       <y>110</y>
+       <width>411</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>170</y>
+       <width>251</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Удалить</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>170</y>
+       <width>251</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Обновить</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>21</x>
+      <y>491</y>
+      <width>76</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Exposures</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>521</y>
+      <width>1081</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>120</number>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>id</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Type</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>SubType</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Early_Start</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Late_Start</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Duration</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Target_Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Right_Ascression</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>V_Magnitude</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Target_Type</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Decination</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Other_Fluxes</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

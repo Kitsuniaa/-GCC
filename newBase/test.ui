@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1564</width>
+    <height>804</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Учетные записи пользователей</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>30</width>
+    <height>30</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1551</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1121</width>
+      <height>661</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QHeaderView::section
+{
+font: 9pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(242, 255, 248);
+background-color: rgb(133, 139, 255);
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::DashLine</enum>
+    </property>
+    <property name="rowCount">
+     <number>0</number>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>103</number>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>45</number>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>id</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>133</red>
+       <green>139</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>inv</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>133</red>
+       <green>139</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>username</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>133</red>
+       <green>139</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Honorific</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>133</red>
+       <green>139</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>First_Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Middle_Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Last_Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Organisation</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Adress</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Country</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Phone_Num</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Fax_Num</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Email</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Login</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Password</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
